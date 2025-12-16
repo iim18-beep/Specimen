@@ -1,44 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>PlazaHome</title>
-<link rel="stylesheet" type="text/css" href="Homestyle.css">
-
+  
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <!-- Link to your CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<img id="GothamRed" src="images/GothamCity_Red.png">
+    <!-- Navigation Bar Section -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-	<img id="GothamBlack" src="images/GothamCity_Black.png">
+    <!-- Main Content Sections (scroll targets) -->
+       
+    </section>
+    <section id="Speakers">
+       
+    </section>
+    <section id="Register">
 
-	<img id="GothamPurple" src="images/GothamCity_Purple.png">
-
-	<div id="BatmanContainer">
-
-<img id="flash" src="images/Batman.png">
-
-<div id="flash"></div>
-
-</div>
-
-<audio id="thunder">
-    <source
-    src="https://github.com/severinbunse/audiofiles/raw/refs/heads/main/loud-thunder-192165.mp3">
-</audio>
-
-<script type="text/javascript" src="HomeScript.js"></script>
-
-<h1 id="header1">PLAZA</h1>
-
-<a href="BlogPost.html">Enter</a>
-
-
-
-
-
-
+    </section>
+    <section id="Events">
+        
+    </section>
+    <section id="Shop">
+        
+    </section>
+    <section id="Passes">
+        
+    </section>
+    <section id="contact">
+        
+    </section>
 
 </body>
 </html>
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section {
+    height: 100vh; /* Makes sections fill the viewport height */
+    padding: 60px 20px 20px; /* Adds spacing, considering the navbar height */
+}
+
+#home { background-color: #f4f4f4; }
+#about { background-color: #e2e2e2; }
+#services { background-color: #d0d0d0; }
+#contact { background-color: #bebebe; }
+
+/* Navigation bar styling */
+.navbar ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Ensures background color spans the full width */
+    background-color: #333; /* Dark background */
+    position: fixed; /* Fixes navbar to the top of the page */
+    top: 0;
+    width: 100%;
+}
+
+.navbar li {
+    float: left; /* Makes list items horizontal */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; /* Removes underlines from links */
+}
+
+/* Change the link color on hover */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+
