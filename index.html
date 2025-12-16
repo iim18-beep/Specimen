@@ -92,3 +92,187 @@ section {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#passes">Passes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section-content">
+        <h1>Welcome to our website</h1>
+        <p>Welcome to sensei’s America,  
+an event designed to bring awareness 
+and pay reverence to the many 
+overt and covert influences of 
+asian cultlure in western countries! 
+we hope to enrich and unite 
+in celebration and respect!</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-content">
+        <h1>About Us</h1>
+        <p>Learn more about our company and team here.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section-content">
+        <h1>Our Services</h1>
+        <p>We offer a range of services tailored to your needs.</p>
+    </section>
+
+    <section id="about" class="section-content">
+        <h1>About Us</h1>
+        <p>Learn more about our company and team here.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-content">
+        <h1>Contact Us</h1>
+        <p>Get in touch with us via our contact details or form.</p>
+    </section>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: block; /* Show on mobile */
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* Navigation Bar Styling */
+.navbar ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex; /* Arranges list items horizontally */
+    justify-content: center;
+    position: fixed; /* Fixes navbar at the top of the page */
+    width: 100%;
+    top: 0;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none; /* Removes underlines from links */
+}
+
+.navbar li a:hover {
+    background-color: #111;
+}
+
+/* Section Styling */
+.section-content {
+    padding: 80px 20px 20px; /* Adds padding to prevent content from hiding under the fixed navbar */
+    min-height: 100vh; /* Ensures sections take up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Distinctive background colors for sections */
+#home {
+    background-image: linear-gradient(#214497,#b82032);
+    padding-top: 100px; /* Extra padding for the first section */
+}
+
+#about {
+    background-color: #2196F3;
+}
+
+#services {
+    background-color: #ff9800;
+}
+
+#contact {
+    background-color: #f44336;
+}
+
+
+#HOME {
+    z-index: 3;
+}
+
